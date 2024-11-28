@@ -113,30 +113,6 @@ const Card = ({
         ))}
       </div> 
 
-
-{/* <div className="card-footer">
-        {category !== "priority" ? (
-          <div className="icon-container">
-            {importanceLevel === 0 ? (
-              <i className="bx bx-dots-horizontal-rounded"></i>
-            ) : importanceLevel === 1 ? (
-              <i className="bx bx-signal-2"></i>
-            ) : importanceLevel === 2 ? (
-              <i className="bx bx-signal-3"></i>
-            ) : importanceLevel === 3 ? (
-              <i className="bx bx-signal-4"></i>
-            ) : (
-              <i className="bx bxs-message-square-error"></i>
-            )}
-          </div>
-        ) : null}
-        {labels?.map((label, idx) => (
-          <div className="label-container" key={idx}>
-            <div className="label-icon"></div>
-            <div className="label-text">{label}</div>
-          </div>
-        ))}
-      </div> */}
     </div>
   );
 };
