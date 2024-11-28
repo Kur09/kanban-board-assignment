@@ -47,5 +47,5 @@ Find the source code on [GitHub](https://github.com/Kur09/kanban-board-assignmen
 
 - **JavaScript**
 - **React JS**
-- **SCSS (CSS Preprocessor)**
+
 
