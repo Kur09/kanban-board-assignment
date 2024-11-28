@@ -1,0 +1,124 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #eaeaeaa3;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%; 
+}
+
+.Dashboard-Container {
+  height: calc(100% - 60px);
+  padding: 25px;
+  gap: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  zoom: 0.75;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Dashboard-Container .column {
+  flex: 1;
+  max-width: calc(33.333% - 20px); 
+  border-radius: 8px;
+}
+
+.Dashboard-Container .Header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.Dashboard-Container .Header .icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.Dashboard-Container .Header .icon-text i {
+  font-size: 22px;
+}
+
+.Dashboard-Container .Header .icon-text .text {
+  padding: 0px 12px;
+  font-weight: 600;
+  color: black;
+  font-size: 16px;
+}
+
+.Dashboard-Container .Header .icon-text span {
+  color: #8a8585;
+  font-size: 16px;
+}
+
+.Dashboard-Container .Header .icon-text #todo {
+  color: #8a8585;
+}
+
+.Dashboard-Container .Header .icon-text #in-progress {
+  color: rgba(247, 166, 15, 0.699);
+}
+
+.Dashboard-Container .Header .icon-text #done {
+  color: rgba(79, 39, 210, 0.71);
+}
+
+.Dashboard-Container .Header .icon-text #cancel {
+  color: #8a8585cd;
+}
+
+.Dashboard-Container .Header .icon-text #backlog {
+  color: rgb(80, 55, 206);
+}
+
+.Dashboard-Container .Header .icon-text #no-priority {
+  color: #8a8585;
+}
+
+.Dashboard-Container .Header .icon-text #low {
+  color: #f5a623;
+}
+
+.Dashboard-Container .Header .icon-text #medium {
+  color: #f5a623;
+}
+
+.Dashboard-Container .Header .icon-text #high {
+  color: #e74c3c;
+}
+
+.Dashboard-Container .Header .icon-text #urgent {
+  color: #c0392b;
+}
+
+.Dashboard-Container .Header .actions i {
+  font-size: 22px;
+  color: #8a8585;
+}
+
+.Dashboard-Container .user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Dashboard-Container .user-avatar-unavailable {
+  opacity: 0.5;
+}
+
+.Dashboard-Container .text {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+.Dashboard-Container .count {
+  color: #8a8585;
+  font-size: 16px;
+}

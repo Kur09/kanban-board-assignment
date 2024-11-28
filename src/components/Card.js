@@ -1,4 +1,4 @@
-import React from "react"
+import React,{useMemo} from "react"
 import "../styles/card.css"
 import avatarDefault from "../images/emp1.png";
 import avatar1 from "../images/emp2.png";
@@ -20,33 +20,30 @@ const Card = ({
   stateMapping,
 }) => {
 
-  console.log('Card props:', {
-    ticketId,
-    ticketTitle,
-    assignedUserId,
-    userList,
-    currentState,
-    importanceLevel,
-    category,
-    sortOrder,
-    stateMapping,
-    labels,
-  });
+ 
   const assignedUser = userList.find((user) => user.id === assignedUserId);
 
   // Mapping for user avatars
-  const avatarMapping = {
+  // const avatarMapping = {
+  //   "usr-1": avatar1,
+  //   "usr-2": avatar4,
+  //   "usr-3": avatar5,
+  //   "usr-4": avatar3,
+  //   "usr-5": avatar2,
+  // };
+  const avatarMapping = useMemo(() => ({
     "usr-1": avatar1,
     "usr-2": avatar4,
     "usr-3": avatar5,
     "usr-4": avatar3,
     "usr-5": avatar2,
-  };
+  }), []);
+  
 
   // Mapping for task status icons
   const statusIcons = {
-    "To Do": "bx bx-circle",
-    "In Progress": "bx bx-adjust",
+    Todo: "bx bx-circle",
+    "In Progress ": "bx bx-adjust",
     Backlog: "bx bx-task-x",
     Done: "bx bxs-check-circle",
     Canceled: "bx bxs-x-circle",
@@ -66,8 +63,7 @@ const Card = ({
       <div className="card-header">
         <div className="status-indicator">
           {category === "users" || category === "priority" ? (
-            <i
-              className={statusIcons[stateMapping[ticketId]] || "bx bx-help-circle"}
+            <i className={statusIcons[stateMapping[ticketId]] || "bx bx-help-circle"}
               id={stateMapping[ticketId]?.toLowerCase().replace(" ", "-")}
             ></i>
           ) : null}
