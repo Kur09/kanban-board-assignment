@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Quicksell-Frontend-Assignment
+React-based interactive Kanban board application with dynamic grouping and ordering options, utilizing the Quicksell API for data.
+An interactive application using React JS that interacts with the provided API from  https://api.quicksell.co/v1/internal/frontend-assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+When a user clicks the "display" button and selects a grouping option, the Kanban board should dynamically adjust to reflect the user's choice.
 
-## Available Scripts
+The application should offer three distinct ways to group the data:
 
-In the project directory, you can run:
+1. **By Status**: Group tickets based on their current status.
+2. **By User**: Arrange tickets according to the assigned user.
+3. **By Priority**: Group tickets based on their priority level.
 
-### `npm start`
+Users should also be able to sort the displayed tickets in two ways:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Priority**: Arrange tickets in descending order of priority.
+2. **Title**: Sort tickets in ascending order based on their title.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**The priority levels for the tickets are as follows:**
 
-### `npm test`
+- Urgent (Priority level 4)
+- High (Priority level 3)
+- Medium (Priority level 2)
+- Low (Priority level 1)
+- No priority (Priority level 0)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Priority levels: (This values you will receive in the api)**
 
-### `npm run build`
+4 - Urgent
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3 - High
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2 - Medium
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1 - Low
 
-### `npm run eject`
+0 - No priority
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Live Demo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Experience the application [here](https://janhavi-quicksell-assignment.vercel.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Find the source code on [GitHub](https://github.com/Kur09/kanban-board-assignment).
 
-## Learn More
+## Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **JavaScript**
+- **React JS**
+- **SCSS (CSS Preprocessor)**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
